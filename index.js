@@ -90,6 +90,6 @@ res.render("contact.ejs");
 
 });
 
-app.listen(port,"0.0.0.0",()=>{
+app.listen(process.env.PORT||port,"0.0.0.0",()=>{
   console.log("server is live on port "+port);
 });
