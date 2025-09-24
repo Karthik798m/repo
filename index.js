@@ -34,12 +34,12 @@ app.post("/submit",(req,res)=>{
   console.log(mail);
   console.log(cont);
   
-   res.render("contact.ejs");
+   
    const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
       user: "karthiksecond96@gmail.com",          // acc details aan sukshikanam
-      pass: "iutn hehx bydq isoo"             
+      pass: "vqrk zdxb qtmr kqjx"             
     }
    });
 
@@ -66,9 +66,9 @@ app.post("/submit",(req,res)=>{
   transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
       console.error("Error sending email:", err);
-      res.send("❌ Error sending email.");
+      res.send(" Error sending email.");
     } else {
-      console.log("✅ Email sent:", info.response);
+      console.log(" Email sent:", info.response);
       
     }
   });
@@ -76,15 +76,15 @@ app.post("/submit",(req,res)=>{
   transporter.sendMail(mailOptions2, (err, info) => {
     if (err) {
       console.error("Error sending email:", err);
-      res.send("❌ Error sending email.");
+      res.send(" Error sending email.");
     } else {
-      console.log("✅ Email sent:", info.response);
+      console.log(" Email sent:", info.response);
       
     }
   });
 
    
-
+res.render("contact.ejs");
 
    
 

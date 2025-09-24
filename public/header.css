@@ -59,7 +59,7 @@ main{
   text-align: center;
   height: fit-content;
   width: 400px;
-  animation:pop 0.8s;
+  animation:pop 0.3s;
 }
 
 
@@ -97,6 +97,7 @@ a:hover{
     flex-direction:column;
     padding:0;
     align-items: center;
+    animation:pop 0.3s
 }
 
 input{
