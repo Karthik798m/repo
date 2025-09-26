@@ -57,7 +57,7 @@ app.post("/submit",(req,res)=>{
     from:  "karthiksecond96@gmail.com",  // sender (user’s email from form)
     to: mail, // your inbox
     subject: "Thanks",
-    text: `Thank you for visiting my portfolio ${name} `
+    text: `Thank you for visiting my portfolio ${name} myra `
   };
 
 
