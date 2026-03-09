@@ -3,6 +3,8 @@ html,body{
     height:100%;
     margin:0;
     font-family: roboto;
+    background: linear-gradient(to top, transparent, black);
+    color: azure;
 }
 body{
     margin:0;
@@ -14,12 +16,16 @@ body{
 .navdiv{
  display:flex;
  flex-direction: row;
- background-color:#0071E3;
+background: linear-gradient(90deg, #1E1E2F, #2b2b3e);
  align-items: center;
- padding: 0;
- margin:0;
+ padding: 10px;;
+ margin-left:70px;
+ margin-right:70px ;
+ margin-top: 30px;
+ border-radius: 30px;
  color: aliceblue;
  height: 5vh;
+ transition: 0.2s;
 }
 
 a{
@@ -44,11 +50,12 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: auto;
 }
 
 .navdiv2{
     height:4vh;
-    background-color:#0071E3;
+    background-color:#282A3A;
     padding:0;
     margin:0;
     display: flex;
@@ -59,7 +66,8 @@ main{
   text-align: center;
   height: fit-content;
   width: 400px;
-  animation:pop 0.3s;
+  animation:pop 0.4s;
+  
 }
 
 
@@ -97,7 +105,7 @@ a:hover{
     flex-direction:column;
     padding:0;
     align-items: center;
-    animation:pop 0.2s
+    animation: pop 0.4s;
 }
 
 input{
@@ -126,7 +134,7 @@ button{
     color:aliceblue;
     padding: 5px;
     border-radius: 10px;
-    background-color: #0071E3;
+    background:linear-gradient(90deg, #1E1E2F, #a9a9b5);;
     margin:10px;
 }
 
@@ -136,20 +144,8 @@ button{
     border-radius:20px;
 }
 
-@media(max-width:786px){
-    html,body{
-    height:100%;
-    margin:0;
-}
-body{
-    margin:0;
-    padding:0;
-    min-height:100vh;
-    display:flex;
-    flex-direction: column;
-}
-
-input{
-    width:300px;
-}
+.navdiv:hover{
+    scale: 101%;
+    box-shadow:0px 0px 20px 2px #0071E3 ;
+    transition: 0.4s;
 }
