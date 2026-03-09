@@ -11,12 +11,8 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const db = new Pool({
-  user:"postgres",
-  host:"localhost",
-  database:"message",
-  password:"karthik123",
-  port:5432,
-
+   connectionString: process.env.postgresql://message_b1nj_user:qbx2j2stS0MmwIh0G77lWoZqOFaCfkfN@dpg-d6ng4p3h46gs7392tk9g-a.oregon-postgres.render.com/message_b1nj,
+  ssl: { rejectUnauthorized: false }
 });
 
 app.get("/",async(req,res)=>{
@@ -114,3 +110,4 @@ app.post("/submit",async(req,res)=>{
 app.listen(process.env.PORT||port,()=>{
   console.log("server is live on port "+port);
 });
+
